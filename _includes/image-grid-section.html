@@ -1,0 +1,15 @@
+<!-- Image Grid Section -->
+<section class="container mx-auto px-8 sm:px-16 text-center">
+    <div class="max-w-xl m-auto">
+        <h2 class="pb-6 uppercase font-bold text-5xl">{{block.heading}}</h2>
+    </div>
+    <!-- Images -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
+        {% for item in block.photos %}
+        <img class="aspect-square w-full object-cover" src="{{item.image}}" alt="{{item.alt}}">
+        {% endfor %}
+    </div>
+    <div class="pt-8">
+        <button class="bg-teal text-seafoam uppercase text-xs px-6 p-2">{{block.button-text}}</button>
+    </div>
+</section>

@@ -1,0 +1,12 @@
+  <!-- Facts Section -->
+  <section class="container mx-auto py-16 px-8 sm:px-16 grid grid-cols-6">
+    {% for item in block.facts-section.facts-loop %}
+    <div class="col-span-2 pb-3 lg:col-span-1">
+        <p class="uppercase font-bold text-xs">{{item.heading}}<br><span class="text-4xl">{{item.fact}}</span></p>
+    </div>
+    {% endfor %}
+
+    <div class="col-span-6 lg:col-span-3 ">
+        <p class="text-sm">{{block.facts-section.text}}</p>
+    </div>
+</section>

@@ -1,0 +1,20 @@
+<!-- Text and Image Grid -->
+<section class="container mx-auto py-32 px-8 sm:px-16">
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Secondary Heading -->
+      <div class="col-span-1 pr-12">
+        <div>
+          <h3 class="uppercase font-bold text-xl">{{page.text-and-image-grid.heading}}</h3>
+        </div>
+        <p class="pb-3">{{page.text-and-image-grid.text-1}}</p>
+        <p class="pb-3">{{page.text-and-image-grid.text-2}}</p>
+        <div class="pt-8">
+          <button class="bg-teal text-seafoam uppercase text-xs px-6 p-2">{{page.text-and-image-grid.button-text}}</button>
+        </div>
+      </div>
+      <!-- md:h-full on the div negates the h-72, h-full on the image is still needed because of the position absolute -->
+      <div class="grow relative order-first h-72 md:order-none md:h-full"> 
+        <img class="absolute w-full h-full object-cover" src="{{page.text-and-image-grid.image}}" alt="{{page.text-and-image-grid.alt}}">
+      </div>
+    </div>
+  </section>
