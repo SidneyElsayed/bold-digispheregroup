@@ -46,16 +46,16 @@ _structures:
           Sometimes all you need is a big random block of text to really drive home the point.
      - label: facts section
        value: 
-       - id: facts-section
-         facts-loop:
-          - heading: Fact
-            fact: 1 Mil
-          - heading: Fact
-            fact: 200M
-          - heading: Fact
-            fact: 500+
-         text: >-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis error sunt aliquam cumque architecto molestiae omnis voluptatem perferendis, amet vero voluptas maiores repellendus modi magnam excepturi facere ratione est? Tenetur!
+          id: facts-section
+          facts-loop:
+            - heading: Fact
+              fact: 1 Mil
+            - heading: Fact
+              fact: 200M
+            - heading: Fact
+              fact: 500+
+          text: >-
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis error sunt aliquam cumque architecto molestiae omnis voluptatem perferendis, amet vero voluptas maiores repellendus modi magnam excepturi facere ratione est? Tenetur!
      - label: image banner
        value:
         id: image-banner
