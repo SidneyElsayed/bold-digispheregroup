@@ -655,6 +655,10 @@ video {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -700,6 +704,9 @@ video {
 .pl-0 {
   padding-left: 0px;
 }
+.pt-10 {
+  padding-top: 2.5rem;
+}
 .text-center {
   text-align: center;
 }
@@ -736,6 +743,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .font-bold {
   font-weight: 700;
@@ -810,6 +821,15 @@ header a:hover {
 }
 
 @media (min-width: 640px) {
+  .sm\:aspect-auto {
+    aspect-ratio: auto;
+  }
+  .sm\:h-72 {
+    height: 18rem;
+  }
+  .sm\:p-0 {
+    padding: 0px;
+  }
   .sm\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -817,6 +837,14 @@ header a:hover {
   .sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -833,8 +861,14 @@ header a:hover {
   .md\:grid {
     display: grid;
   }
+  .md\:aspect-auto {
+    aspect-ratio: auto;
+  }
   .md\:h-full {
     height: 100%;
+  }
+  .md\:h-72 {
+    height: 18rem;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -847,6 +881,9 @@ header a:hover {
   }
   .md\:justify-between {
     justify-content: space-between;
+  }
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 }
 
