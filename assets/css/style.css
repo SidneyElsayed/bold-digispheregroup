@@ -500,9 +500,13 @@ video {
 .m-auto {
   margin: auto;
 }
-.-mx-2 {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+.-mx-4 {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -554,6 +558,9 @@ video {
 .content-center {
   align-content: center;
 }
+.content-end {
+  align-content: flex-end;
+}
 .justify-center {
   justify-content: center;
 }
@@ -593,9 +600,6 @@ video {
 }
 .bg-inherit {
   background-color: inherit;
-}
-.bg-featured {
-  background-color: var(--featured-color);
 }
 .object-cover {
   -o-object-fit: cover;
@@ -655,6 +659,9 @@ video {
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -695,14 +702,55 @@ video {
 .uppercase {
   text-transform: uppercase;
 }
-.text-featured {
-  color: var(--featured-color);
-}
 .text-base-color {
   color: var(--base-color);
 }
+.text-featured {
+  color: var(--featured-color);
+}
 
 /* Custom CSS */
+
+/* Button styles */
+
+/* Reuseable Group Styles */
+.button {
+    background-color: var(--featured-color);
+    color: var(--base-color);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--featured-color);
+    transition: all 150ms;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: var(--accent-color);
+    color: var(--base-color);
+    text-shadow: var(--base-color) 3px;
+    border: 1px solid transparent;
+}
+
+/* Footer & header links speecifically so they don't jump */
+
+footer a {
+    border-bottom: 2px solid transparent;
+}
+
+footer a:hover {
+    border-bottom: 2px solid;
+    display: inline-block;
+}
+
+header a {
+    border: 2px solid transparent;
+    transition: all 150ms;
+}
+
+header a:hover {
+    border-bottom: 2px solid;
+}
 
 @media (min-width: 640px) {
   .sm\:px-16 {
