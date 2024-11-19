@@ -1,14 +1,16 @@
   <!-- Facts Section -->
   <section class="container mx-auto py-20 px-8 sm:px-16 grid grid-cols-6">
-    {% for item in block.facts-loop limit:3 %}
-    {% if item.heading and item.fact %}
-    <div class="col-span-2 pb-8 lg:pb-0 lg:col-span-1 content-center">
-        <p class="uppercase font-bold text-xs">{{item.heading}}<br><span class="text-4xl">{{item.fact}}</span></p>
+    <div class="col-span-6 lg:col-span-3 flex text-center">
+        {% for item in block.facts-loop | limit:3 %}
+        {% if item.heading and item.fact %}
+        <div class="flex m-auto pb-8 lg:pb-0">
+            <p class="uppercase font-bold text-xs">{{item.heading}}<br><span class="text-4xl">{{item.fact}}</span></p>
+        </div>
+        {% endif %}
+        {% endfor %}
     </div>
-    {% endif %}
-    {% endfor %}
 
-    <div class="col-span-6 lg:col-span-3 ">
+    <div class="col-span-6 lg:col-span-3">
         <p class="text-sm">{{block.text}}</p>
     </div>
 </section>

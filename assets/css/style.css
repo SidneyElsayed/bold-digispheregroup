@@ -567,6 +567,9 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.justify-items-center {
+  justify-items: center;
+}
 .gap-1 {
   gap: 0.25rem;
 }
@@ -584,6 +587,9 @@ video {
 }
 .gap-10 {
   gap: 2.5rem;
+}
+.justify-self-center {
+  justify-self: center;
 }
 .border-2 {
   border-width: 2px;
