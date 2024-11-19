@@ -4,7 +4,15 @@
 <!-- Head -->
 {% include site-head.html %}
 
-<body class="bg-seafoam text-teal">
+<style>
+   :root {
+      --featured-color: {{site.data.style.featured-color}};
+      --accent-color: {{site.data.style.accent-color}};
+      --base-color: {{site.data.style.base-color}};
+   }
+</style>
+
+<body class="bg-base-color text-featured">
 
  <!-- Header -->
  {% include header.html %}

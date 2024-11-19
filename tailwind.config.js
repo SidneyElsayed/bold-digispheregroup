@@ -9,8 +9,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        seafoam: '#b8eaf4',
-        teal: '#126374',
+        'featured': 'var(--featured-color)',
+        'accent': 'var(--accent-color)',
+        'base-color': 'var(--base-color)',
       }
     },
   },
