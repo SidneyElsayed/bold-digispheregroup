@@ -691,6 +691,15 @@ video {
 .pb-4 {
   padding-bottom: 1rem;
 }
+.pl-12 {
+  padding-left: 3rem;
+}
+.pr-0 {
+  padding-right: 0px;
+}
+.pl-0 {
+  padding-left: 0px;
+}
 .text-center {
   text-align: center;
 }
@@ -814,6 +823,9 @@ header a:hover {
 @media (min-width: 768px) {
   .md\:order-none {
     order: 0;
+  }
+  .md\:order-first {
+    order: -9999;
   }
   .md\:flex {
     display: flex;
