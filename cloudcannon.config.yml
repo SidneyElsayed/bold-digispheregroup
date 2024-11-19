@@ -31,6 +31,53 @@ _inputs:
       allow_create: true
       empty_type: array
     cascade: true
+  layout:
+    type: select
+    label: Layout
+    comment: Choose the page layout type
+    options:
+      values: 
+        - default
+    cascade: true
+  image-horizontal-focal-point:
+    type: select
+    label: Horizontal image focal point
+    comment: Choose where the focus/positioning of the image should be
+    options:
+      values: 
+        - center
+        - left
+        - right
+    cascade: true
+  image-vertical-focal-point:
+    type: select
+    label: Vertical image focal point
+    comment: Choose where the focus/positioning of the image should be
+    options:
+      values: 
+        - center
+        - top
+        - bottom
+    cascade: true
+  image-placement:
+    type: select
+    label: Image placement
+    comment: Choose whether the image is on the left or right
+    options:
+      values: 
+        - left
+        - right
+    cascade: true
+  text-placement:
+    type: select
+    label: Text placement
+    comment: Choose where the text in placed in relation to the image
+    options:
+      values: 
+        - top
+        - center
+        - bottom
+    cascade: true
   id:
     type: text
     hidden: true
